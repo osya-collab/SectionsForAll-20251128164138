@@ -3,5 +3,10 @@
         "id": "hero-split-card-v1",
         "name": "Hero Split Cards",
         "category": "Hero"
+    },
+    {
+        "id": "hero-dining-v1",
+        "name": "Hero Section - Dining on the Lake",
+        "category": "Hero"
     }
 ]

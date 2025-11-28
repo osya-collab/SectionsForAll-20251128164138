@@ -1,0 +1,34 @@
+{
+    "name": "Dark Service Grid",
+    "category": "Services",
+    "description": "A dark themed grid of services, each with a red numbered badge.",
+    "tags": [
+        "services",
+        "grid",
+        "dark-theme"
+    ],
+    "structure": [
+        "section",
+        "grid",
+        "card",
+        "badge"
+    ],
+    "complexity": "simple",
+    "use_cases": [
+        "features list",
+        "process steps",
+        "menu categories"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#1a1a1a",
+            "#222222",
+            "#e7272d"
+        ],
+        "fonts": [
+            "Montserrat",
+            "Sans-serif"
+        ],
+        "visual_identity": "Dark, sleek, high contrast with red accents."
+    }
+}

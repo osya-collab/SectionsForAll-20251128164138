@@ -98,5 +98,10 @@
         "id": "nav-with-socials",
         "name": "Nav with Social Icons",
         "category": "Menu"
+    },
+    {
+        "id": "menu-burger-grid-v1",
+        "name": "Burger Menu Grid",
+        "category": "Menu"
     }
 ]

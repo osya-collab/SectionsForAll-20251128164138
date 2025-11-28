@@ -1,0 +1,29 @@
+{
+    "id": "footer-newsletter-v1",
+    "html": "<section class=\"section-footer-newsletter-v1\" data-ai-id=\"element-placeholder\">\n  <div class=\"footer-container\">\n     <div class=\"footer-visual\">\n        <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=black+burger+dark&amp;image_type=photo\" alt=\"Footer Visual\">\n        <div class=\"visual-border\"></div>\n     </div>\n     <div class=\"footer-content\">\n        <div class=\"subscribe-block\">\n           <h3>{{t:subscribe_title}}</h3>\n           <p>{{t:subscribe_text}}</p>\n           <form class=\"sub-form\">\n              <input type=\"email\" placeholder=\"Enter a valid email address\">\n              <button type=\"submit\">{{t:submit}}</button>\n           </form>\n        </div>\n        <div class=\"info-block\">\n           <div class=\"info-col\">\n              <h4>{{t:location_title}}</h4>\n              <p>28 Jackson Blvd Ste 1020<br>Chicago<br>IL 60604-2340</p>\n           </div>\n           <div class=\"info-col\">\n              <h4>{{t:follow_us}}</h4>\n              <div class=\"social-icons\">\n                 <span>F</span> <span>T</span> <span>I</span> <span>G</span>\n              </div>\n              <p class=\"copyright\">©2020 Privacy policy</p>\n           </div>\n        </div>\n     </div>\n  </div>\n\n\n<!-- Embedded Interactive Script -->\n<script>\n(function() {\n  const section = ((document.currentScript && document.currentScript.closest('.section-footer-newsletter-v1')) || document.querySelector('.section-footer-newsletter-v1'));\n  if (!section) return;\n  const imgs = section.querySelectorAll('img');\n  imgs.forEach(img => {\n    if (img.src.startsWith('https://pixabay.com/api/')) {\n      fetch(img.src)\n        .then(response => response.json())\n        .then(data => {\n          if (data.hits && data.hits.length > 0) {\n            img.src = data.hits[0].webformatURL;\n          } else {\n             img.src = 'https://via.placeholder.com/400x600?text=Dark+Food';\n          }\n        })\n        .catch(err => console.error('Pixabay API Error:', err));\n    }\n  });\n})();\n</script>\n</section>",
+    "css": ".section-footer-newsletter-v1 {\n  \n  --color-bg: #111111;\n  --color-text: #ffffff;\n  background-color: var(--color-bg);\n  color: var(--color-text);\n  font-family: 'Montserrat', sans-serif;\n  padding: 0;\n  overflow: hidden;\n}\n\n.section-footer-newsletter-v1 .footer-container {\n  display: flex;\n  flex-wrap: wrap;\n  min-height: 400px;\n}\n\n.section-footer-newsletter-v1 .footer-visual {\n  flex: 1;\n  min-width: 300px;\n  position: relative;\n}\n\n.section-footer-newsletter-v1 .footer-visual img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n\n.section-footer-newsletter-v1 .visual-border {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  width: 50px;\n  height: 100%;\n  background: var(--color-primary);\n}\n\n.section-footer-newsletter-v1 .footer-content {\n  flex: 1;\n  min-width: 300px;\n  padding: 60px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\n\n.section-footer-newsletter-v1 .subscribe-block {\n  margin-bottom: 50px;\n}\n\n.section-footer-newsletter-v1 .subscribe-block h3 {\n  font-size: 2rem;\n  margin-bottom: 10px;\n  text-transform: uppercase;\n}\n\n.section-footer-newsletter-v1 .sub-form {\n  display: flex;\n  margin-top: 20px;\n  border-bottom: 1px solid #555;\n}\n\n.section-footer-newsletter-v1 .sub-form input {\n  flex: 1;\n  background: transparent;\n  border: none;\n  color: #fff;\n  padding: 10px 0;\n  outline: none;\n}\n\n.section-footer-newsletter-v1 .sub-form button {\n  background: var(--color-primary);\n  color: #fff;\n  border: none;\n  padding: 10px 20px;\n  text-transform: uppercase;\n  font-weight: 700;\n  cursor: pointer;\n}\n\n.section-footer-newsletter-v1 .info-block {\n  display: flex;\n  justify-content: space-between;\n}\n\n.section-footer-newsletter-v1 .info-col h4 {\n  text-transform: uppercase;\n  letter-spacing: 2px;\n  margin-bottom: 15px;\n}\n\n.section-footer-newsletter-v1 .info-col p {\n  font-size: 0.9rem;\n  line-height: 1.5;\n  color: #aaa;\n}\n\n.section-footer-newsletter-v1 .social-icons span {\n  display: inline-block;\n  margin-right: 10px;\n  font-weight: bold;\n  background: #fff;\n  color: #000;\n  width: 25px;\n  height: 25px;\n  text-align: center;\n  line-height: 25px;\n  border-radius: 50%;\n  font-size: 0.8rem;\n  cursor: pointer;\n}\n\n@media (max-width: 768px) {\n  .section-footer-newsletter-v1 .footer-visual {\n    height: 200px;\n  }\n  .section-footer-newsletter-v1 .info-block {\n    flex-direction: column;\n    gap: 30px;\n  }\n  .section-footer-newsletter-v1 .visual-border {\n    display: none;\n  }\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "subscribe_title": "Subscribe",
+            "subscribe_text": "to the newsletters and content update",
+            "submit": "Submit",
+            "location_title": "Location",
+            "follow_us": "Follow Us"
+        },
+        "ar": {
+            "subscribe_title": "اشتراك",
+            "subscribe_text": "للنشرات الإخبارية وتحديث المحتوى",
+            "submit": "إرسال",
+            "location_title": "موقع",
+            "follow_us": "تابعنا"
+        },
+        "de": {
+            "subscribe_title": "Abonnieren",
+            "subscribe_text": "zu den Newslettern und Inhaltsaktualisierungen",
+            "submit": "Absenden",
+            "location_title": "Standort",
+            "follow_us": "Folgen Sie uns"
+        }
+    }
+}

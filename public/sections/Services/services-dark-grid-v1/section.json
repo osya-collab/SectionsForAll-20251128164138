@@ -1,0 +1,38 @@
+{
+    "id": "services-dark-grid-v1",
+    "html": "<section class=\"section-services-dark-grid-v1\" data-ai-id=\"element-placeholder\">\n  <div class=\"container\">\n    <div class=\"service-grid\">\n      <div class=\"service-card\">\n        <div class=\"card-number\">01</div>\n        <h3 class=\"card-title\">{{t:service_1_title}}</h3>\n        <p class=\"card-text\">{{t:service_desc}}</p>\n        <a href=\"#\" class=\"link-learn\">{{t:learn_more}}</a>\n      </div>\n      <div class=\"service-card\">\n        <div class=\"card-number\">02</div>\n        <h3 class=\"card-title\">{{t:service_2_title}}</h3>\n        <p class=\"card-text\">{{t:service_desc}}</p>\n        <a href=\"#\" class=\"link-learn\">{{t:learn_more}}</a>\n      </div>\n      <div class=\"service-card\">\n        <div class=\"card-number\">03</div>\n        <h3 class=\"card-title\">{{t:service_3_title}}</h3>\n        <p class=\"card-text\">{{t:service_desc}}</p>\n        <a href=\"#\" class=\"link-learn\">{{t:learn_more}}</a>\n      </div>\n      <div class=\"service-card\">\n        <div class=\"card-number\">04</div>\n        <h3 class=\"card-title\">{{t:service_4_title}}</h3>\n        <p class=\"card-text\">{{t:service_desc}}</p>\n        <a href=\"#\" class=\"link-learn\">{{t:learn_more}}</a>\n      </div>\n      <div class=\"service-card\">\n        <div class=\"card-number\">05</div>\n        <h3 class=\"card-title\">{{t:service_5_title}}</h3>\n        <p class=\"card-text\">{{t:service_desc}}</p>\n        <a href=\"#\" class=\"link-learn\">{{t:learn_more}}</a>\n      </div>\n      <div class=\"service-card\">\n        <div class=\"card-number\">06</div>\n        <h3 class=\"card-title\">{{t:service_6_title}}</h3>\n        <p class=\"card-text\">{{t:service_desc}}</p>\n        <a href=\"#\" class=\"link-learn\">{{t:learn_more}}</a>\n      </div>\n    </div>\n  </div>\n\n\n<!-- Embedded Interactive Script -->\n<script>\n(function() {\n  // No specific JS required for this section, but placeholder for consistency\n})();\n</script>\n</section>",
+    "css": ".section-services-dark-grid-v1 {\n  \n  --color-bg: #1a1a1a;\n  --color-card-bg: #222222;\n  --color-text: #aaaaaa;\n  --color-title: #ffffff;\n  padding: 80px 20px;\n  background-color: var(--color-bg);\n  font-family: 'Montserrat', sans-serif;\n}\n\n.section-services-dark-grid-v1 .container {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.section-services-dark-grid-v1 .service-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n  gap: 30px;\n}\n\n.section-services-dark-grid-v1 .service-card {\n  background-color: var(--color-card-bg);\n  padding: 40px;\n  position: relative;\n  transition: transform 0.3s;\n}\n\n.section-services-dark-grid-v1 .service-card:hover {\n  transform: translateY(-5px);\n}\n\n.section-services-dark-grid-v1 .card-number {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 50px;\n  height: 50px;\n  background-color: var(--color-primary);\n  color: #fff;\n  border-radius: 50%;\n  font-weight: 700;\n  font-size: 1.2rem;\n  margin-bottom: 20px;\n}\n\n.section-services-dark-grid-v1 .card-title {\n  color: var(--color-title);\n  font-size: 1.25rem;\n  margin-bottom: 15px;\n  text-transform: capitalize;\n}\n\n.section-services-dark-grid-v1 .card-text {\n  color: var(--color-text);\n  font-size: 0.9rem;\n  line-height: 1.6;\n  margin-bottom: 25px;\n  font-style: italic;\n}\n\n.section-services-dark-grid-v1 .link-learn {\n  color: #fff;\n  text-decoration: underline;\n  font-size: 0.8rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  opacity: 0.8;\n  transition: opacity 0.3s;\n}\n\n.section-services-dark-grid-v1 .link-learn:hover {\n  opacity: 1;\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "service_1_title": "Fresh Food",
+            "service_2_title": "Dinner Meals",
+            "service_3_title": "Classic Menu",
+            "service_4_title": "Chef's Special",
+            "service_5_title": "Pasta & Pizza",
+            "service_6_title": "Vegan Dishes",
+            "service_desc": "Sample text. Click to select the text box. Click again or double click to start editing the text.",
+            "learn_more": "Learn More"
+        },
+        "ar": {
+            "service_1_title": "طعام طازج",
+            "service_2_title": "وجبات العشاء",
+            "service_3_title": "قائمة كلاسيكية",
+            "service_4_title": "تخصص الشيف",
+            "service_5_title": "باستا وبيتزا",
+            "service_6_title": "أطباق نباتية",
+            "service_desc": "نص عينة. انقر لتحديد مربع النص.",
+            "learn_more": "اعرف المزيد"
+        },
+        "de": {
+            "service_1_title": "Frisches Essen",
+            "service_2_title": "Abendessen",
+            "service_3_title": "Klassisches Menü",
+            "service_4_title": "Spezialität des Küchenchefs",
+            "service_5_title": "Pasta & Pizza",
+            "service_6_title": "Vegane Gerichte",
+            "service_desc": "Beispieltext. Klicken Sie hier, um das Textfeld auszuwählen.",
+            "learn_more": "Mehr erfahren"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "id": "hero-dining-v1",
+    "html": "<section class=\"section-hero-dining-v1\" data-ai-id=\"element-placeholder\">\n  <div class=\"hero-container\">\n    <div class=\"hero-content\">\n      <h2 class=\"hero-subtitle\">{{t:hero_subtitle}}</h2>\n      <h1 class=\"hero-title\">{{t:hero_title}}</h1>\n      <p class=\"hero-desc\">{{t:hero_desc}}</p>\n      <a href=\"#\" class=\"btn-primary\">{{t:view_menu}}</a>\n    </div>\n    <div class=\"hero-visual\">\n      <div class=\"blob-shape\"></div>\n      <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=chef+tasting+food&amp;image_type=photo\" alt=\"Chef\" class=\"hero-img\">\n    </div>\n  </div>\n\n\n<!-- Embedded Interactive Script -->\n<script>\n(function() {\n  const section = ((document.currentScript && document.currentScript.closest('.section-hero-dining-v1')) || document.querySelector('.section-hero-dining-v1'));\n  if (!section) return;\n  const imgs = section.querySelectorAll('img');\n  imgs.forEach(img => {\n    if (img.src.startsWith('https://pixabay.com/api/')) {\n      fetch(img.src)\n        .then(response => response.json())\n        .then(data => {\n          if (data.hits && data.hits.length > 0) {\n            img.src = data.hits[0].webformatURL;\n          } else {\n             img.src = 'https://via.placeholder.com/500x500?text=Chef+Image';\n          }\n        })\n        .catch(err => console.error('Pixabay API Error:', err));\n    }\n  });\n})();\n</script>\n</section>",
+    "css": ".section-hero-dining-v1 {\n  \n  \n  --color-text: #555555;\n  --color-bg: #ffffff;\n  padding: 80px 20px;\n  background-color: var(--color-bg);\n  font-family: 'Montserrat', sans-serif;\n  overflow: hidden;\n}\n\n.section-hero-dining-v1 .hero-container {\n  max-width: 1200px;\n  margin: 0 auto;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  gap: 40px;\n}\n\n.section-hero-dining-v1 .hero-content {\n  flex: 1;\n  min-width: 300px;\n}\n\n.section-hero-dining-v1 .hero-subtitle {\n  color: var(--color-primary);\n  font-size: 2rem;\n  font-weight: 700;\n  margin-bottom: 0;\n  line-height: 1.2;\n}\n\n.section-hero-dining-v1 .hero-title {\n  color: var(--color-dark);\n  font-size: 3.5rem;\n  font-weight: 700;\n  margin-top: 0;\n  margin-bottom: 20px;\n  line-height: 1.1;\n}\n\n.section-hero-dining-v1 .hero-desc {\n  color: var(--color-text);\n  margin-bottom: 30px;\n  line-height: 1.6;\n  max-width: 500px;\n}\n\n.section-hero-dining-v1 .btn-primary {\n  display: inline-block;\n  background-color: var(--color-primary);\n  color: #fff;\n  padding: 12px 30px;\n  text-decoration: none;\n  border-radius: 50px;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  transition: opacity 0.3s;\n}\n\n.section-hero-dining-v1 .btn-primary:hover {\n  opacity: 0.9;\n}\n\n.section-hero-dining-v1 .hero-visual {\n  flex: 1;\n  min-width: 300px;\n  position: relative;\n  display: flex;\n  justify-content: center;\n}\n\n.section-hero-dining-v1 .blob-shape {\n  position: absolute;\n  top: 10%;\n  right: -20px;\n  width: 100%;\n  height: 100%;\n  background-color: var(--color-primary);\n  border-radius: 46% 54% 39% 61% / 45% 36% 64% 55%;\n  z-index: 0;\n  transform: scale(1.1) rotate(10deg);\n}\n\n.section-hero-dining-v1 .hero-img {\n  position: relative;\n  z-index: 1;\n  width: 100%;\n  max-width: 450px;\n  border-radius: 0 0 200px 200px;\n  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);\n  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);\n}\n\n@media (max-width: 768px) {\n  .section-hero-dining-v1 .hero-container {\n    flex-direction: column;\n    text-align: center;\n  }\n  .section-hero-dining-v1 .hero-desc {\n    margin: 0 auto 30px;\n  }\n  .section-hero-dining-v1 .blob-shape {\n    width: 80%;\n    height: 80%;\n    top: 10%;\n    right: 10%;\n  }\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "hero_subtitle": "Dining",
+            "hero_title": "On The Lake",
+            "hero_desc": "Ullamcorper malesuada proin libero nunc. Id semper risus in hendrerit gravida. Vulputate sapien nec sagittis aliquam malesuada bibendum.",
+            "view_menu": "View Menu"
+        },
+        "ar": {
+            "hero_subtitle": "تنينج",
+            "hero_title": "على البحيرة",
+            "hero_desc": "أولامكوربر ماليساوادا بروين ليبيرو نونك. إد سيمبر ريسوس إن هيندريريت جرافيدا.",
+            "view_menu": "عرض القائمة"
+        },
+        "de": {
+            "hero_subtitle": "Speisen",
+            "hero_title": "Am See",
+            "hero_desc": "Ullamcorper malesuada proin libero nunc. Id semper risus in hendrerit gravida.",
+            "view_menu": "Menü ansehen"
+        }
+    }
+}

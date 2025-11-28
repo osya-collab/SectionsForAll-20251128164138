@@ -1,0 +1,35 @@
+{
+    "id": "menu-burger-grid-v1",
+    "html": "<section class=\"section-menu-burger-grid-v1\" data-ai-id=\"element-placeholder\">\n  <div class=\"container\">\n    <h2 class=\"section-title\">{{t:burger_menu_title}}</h2>\n    <p class=\"section-subtitle\">{{t:burger_menu_sub}}</p>\n    <div class=\"menu-grid\">\n      <div class=\"menu-card\">\n        <div class=\"card-content\">\n           <h3 class=\"item-name\">{{t:item_1_name}}</h3>\n           <div class=\"item-price\">$8.50</div>\n           <a href=\"#\" class=\"btn-add\">{{t:add_cart}}</a>\n        </div>\n        <div class=\"card-img\">\n           <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=double+burger&amp;image_type=photo\" alt=\"Double Burger\">\n        </div>\n      </div>\n      <div class=\"menu-card\">\n        <div class=\"card-content\">\n           <h3 class=\"item-name\">{{t:item_2_name}}</h3>\n           <div class=\"item-price\">$7.50</div>\n           <a href=\"#\" class=\"btn-add\">{{t:add_cart}}</a>\n        </div>\n        <div class=\"card-img\">\n           <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=cheese+burger&amp;image_type=photo\" alt=\"Farm House\">\n        </div>\n      </div>\n      <div class=\"menu-card\">\n        <div class=\"card-content\">\n           <h3 class=\"item-name\">{{t:item_3_name}}</h3>\n           <div class=\"item-price\">$8.00</div>\n           <a href=\"#\" class=\"btn-add\">{{t:add_cart}}</a>\n        </div>\n        <div class=\"card-img\">\n           <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=bacon+burger&amp;image_type=photo\" alt=\"Bacon Burger\">\n        </div>\n      </div>\n      <div class=\"menu-card\">\n        <div class=\"card-content\">\n           <h3 class=\"item-name\">{{t:item_4_name}}</h3>\n           <div class=\"item-price\">$15.00</div>\n           <a href=\"#\" class=\"btn-add\">{{t:add_cart}}</a>\n        </div>\n        <div class=\"card-img\">\n           <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=gourmet+burger&amp;image_type=photo\" alt=\"Special Offer\">\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n<!-- Embedded Interactive Script -->\n<script>\n(function() {\n  const section = ((document.currentScript && document.currentScript.closest('.section-menu-burger-grid-v1')) || document.querySelector('.section-menu-burger-grid-v1'));\n  if (!section) return;\n  const imgs = section.querySelectorAll('img');\n  imgs.forEach(img => {\n    if (img.src.startsWith('https://pixabay.com/api/')) {\n      fetch(img.src)\n        .then(response => response.json())\n        .then(data => {\n          if (data.hits && data.hits.length > 0) {\n            img.src = data.hits[0].webformatURL;\n          } else {\n             img.src = 'https://via.placeholder.com/200x200?text=Burger';\n          }\n        })\n        .catch(err => console.error('Pixabay API Error:', err));\n    }\n  });\n})();\n</script>\n</section>",
+    "css": ".section-menu-burger-grid-v1 {\n  \n  --color-bg: #000000;\n  --color-text: #ffffff;\n  padding: 80px 20px;\n  background-color: var(--color-bg);\n  font-family: 'Montserrat', sans-serif;\n  color: var(--color-text);\n}\n\n.section-menu-burger-grid-v1 .container {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.section-menu-burger-grid-v1 .section-title {\n  text-align: center;\n  font-size: 2.5rem;\n  margin-bottom: 10px;\n  font-weight: 700;\n}\n\n.section-menu-burger-grid-v1 .section-subtitle {\n  text-align: center;\n  margin-bottom: 50px;\n  color: #cccccc;\n  font-size: 0.9rem;\n}\n\n.section-menu-burger-grid-v1 .menu-grid {\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 30px;\n}\n\n.section-menu-burger-grid-v1 .menu-card {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-bottom: 1px solid #333;\n  padding-bottom: 20px;\n}\n\n.section-menu-burger-grid-v1 .card-content {\n  flex: 1;\n}\n\n.section-menu-burger-grid-v1 .item-name {\n  font-size: 1.5rem;\n  font-weight: 700;\n  margin: 0 0 10px 0;\n}\n\n.section-menu-burger-grid-v1 .item-price {\n  color: var(--color-primary);\n  font-weight: 600;\n  margin-bottom: 15px;\n}\n\n.section-menu-burger-grid-v1 .btn-add {\n  display: inline-block;\n  background-color: var(--color-primary);\n  color: #fff;\n  padding: 8px 20px;\n  text-decoration: none;\n  font-size: 0.75rem;\n  border-radius: 20px;\n  text-transform: uppercase;\n  transition: background-color 0.3s;\n}\n\n.section-menu-burger-grid-v1 .btn-add:hover {\n  background-color: #c01c22;\n}\n\n.section-menu-burger-grid-v1 .card-img {\n  width: 150px;\n  height: 100px;\n  overflow: hidden;\n  border-radius: 10px;\n  margin-left: 20px;\n}\n\n.section-menu-burger-grid-v1 .card-img img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n\n@media (max-width: 768px) {\n  .section-menu-burger-grid-v1 .menu-grid {\n    grid-template-columns: 1fr;\n  }\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "burger_menu_title": "Burger Menu",
+            "burger_menu_sub": "You're gonna need two hands to hold our toasted buns.",
+            "item_1_name": "Double Burger",
+            "item_2_name": "Farm House",
+            "item_3_name": "Bacon Burger",
+            "item_4_name": "Special Offer",
+            "add_cart": "Add To Cart"
+        },
+        "ar": {
+            "burger_menu_title": "قائمة البرجر",
+            "burger_menu_sub": "ستحتاج إلى يدين لحمل الكعك المحمص.",
+            "item_1_name": "برجر مزدوج",
+            "item_2_name": "بيت المزرعة",
+            "item_3_name": "برجر لحم مقدد",
+            "item_4_name": "عرض خاص",
+            "add_cart": "أضف إلى السلة"
+        },
+        "de": {
+            "burger_menu_title": "Burger Menü",
+            "burger_menu_sub": "Du wirst zwei Hände brauchen, um unsere getoasteten Brötchen zu halten.",
+            "item_1_name": "Doppelter Burger",
+            "item_2_name": "Bauernhaus",
+            "item_3_name": "Speck Burger",
+            "item_4_name": "Sonderangebot",
+            "add_cart": "In den Warenkorb"
+        }
+    }
+}

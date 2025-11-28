@@ -13,5 +13,10 @@
         "id": "feature-wide-v2",
         "name": "Wide Feature Image with Text V2",
         "category": "Features"
+    },
+    {
+        "id": "feature-breakfast-card-v1",
+        "name": "Feature - Breakfast Overlap",
+        "category": "Features"
     }
 ]

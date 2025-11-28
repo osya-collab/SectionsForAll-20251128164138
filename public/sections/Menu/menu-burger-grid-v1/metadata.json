@@ -1,0 +1,33 @@
+{
+    "name": "Burger Menu Grid",
+    "category": "Menu",
+    "description": "A 2-column menu grid displaying items with prices, images, and add to cart buttons.",
+    "tags": [
+        "menu",
+        "restaurant",
+        "pricing"
+    ],
+    "structure": [
+        "section",
+        "grid",
+        "card-horizontal"
+    ],
+    "complexity": "intermediate",
+    "use_cases": [
+        "restaurant menu",
+        "product list",
+        "pricing list"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#000000",
+            "#ffffff",
+            "#e7272d"
+        ],
+        "fonts": [
+            "Montserrat",
+            "Sans-serif"
+        ],
+        "visual_identity": "High-end fast food, dark aesthetics."
+    }
+}

@@ -93,5 +93,10 @@
         "id": "gallery-smarters",
         "name": "3D Sports Cards",
         "category": "Gallery"
+    },
+    {
+        "id": "gallery-strip-v1",
+        "name": "Image Gallery Strip",
+        "category": "Gallery"
     }
 ]

@@ -1,0 +1,35 @@
+{
+    "name": "Hero Section - Dining on the Lake",
+    "category": "Hero",
+    "description": "A split hero section with text on the left and a chef image with an abstract red background shape on the right.",
+    "tags": [
+        "hero",
+        "header",
+        "restaurant",
+        "chef"
+    ],
+    "structure": [
+        "section",
+        "container",
+        "content-col",
+        "visual-col"
+    ],
+    "complexity": "intermediate",
+    "use_cases": [
+        "restaurant landing",
+        "food blog",
+        "chef portfolio"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#e7272d",
+            "#222222",
+            "#ffffff"
+        ],
+        "fonts": [
+            "Montserrat",
+            "Sans-serif"
+        ],
+        "visual_identity": "Clean, modern, bold typography with abstract organic shapes."
+    }
+}

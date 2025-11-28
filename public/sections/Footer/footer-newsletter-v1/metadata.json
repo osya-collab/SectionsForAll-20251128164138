@@ -1,0 +1,32 @@
+{
+    "name": "Restaurant Footer",
+    "category": "Footer",
+    "description": "A split footer with a large image on the left and newsletter/location info on the right.",
+    "tags": [
+        "footer",
+        "contact",
+        "form"
+    ],
+    "structure": [
+        "section",
+        "split-layout",
+        "form"
+    ],
+    "complexity": "intermediate",
+    "use_cases": [
+        "restaurant footer",
+        "business contact"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#111111",
+            "#ffffff",
+            "#e7272d"
+        ],
+        "fonts": [
+            "Montserrat",
+            "Sans-serif"
+        ],
+        "visual_identity": "Dark luxury with functional typography."
+    }
+}

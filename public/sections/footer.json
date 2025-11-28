@@ -63,5 +63,10 @@
         "id": "footer-minimal-dark",
         "name": "Minimal Dark Footer",
         "category": "Footer"
+    },
+    {
+        "id": "footer-newsletter-v1",
+        "name": "Restaurant Footer",
+        "category": "Footer"
     }
 ]

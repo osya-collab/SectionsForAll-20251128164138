@@ -1,0 +1,26 @@
+{
+    "name": "Image Gallery Strip",
+    "category": "Gallery",
+    "description": "A full-width strip of 4 images displaying food items.",
+    "tags": [
+        "gallery",
+        "images",
+        "food"
+    ],
+    "structure": [
+        "section",
+        "grid",
+        "image"
+    ],
+    "complexity": "simple",
+    "use_cases": [
+        "portfolio preview",
+        "instagram feed",
+        "visual divider"
+    ],
+    "style_analysis": {
+        "colors": [],
+        "fonts": [],
+        "visual_identity": "Visual heavy, grid based."
+    }
+}

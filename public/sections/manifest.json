@@ -19,6 +19,7 @@
         "trust.json",
         "hero.json",
         "features.json",
-        "call-to-action.json"
+        "call-to-action.json",
+        "services.json"
     ]
 }
