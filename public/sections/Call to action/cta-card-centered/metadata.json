@@ -1,0 +1,31 @@
+{
+    "name": "Centered CTA Card",
+    "category": "Call to action",
+    "description": "A large, centered text card inviting user contact.",
+    "tags": [
+        "cta",
+        "contact",
+        "card"
+    ],
+    "structure": [
+        "section",
+        "card",
+        "text-centered"
+    ],
+    "complexity": "simple",
+    "use_cases": [
+        "footer cta",
+        "contact section"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#D6D6D6",
+            "#CDCDCD",
+            "#C27546"
+        ],
+        "fonts": [
+            "Manrope"
+        ],
+        "visual_identity": "Minimalist"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "id": "cta-card-centered",
+    "html": "<section class=\"section-cta-card-centered\" data-ai-id=\"element-placeholder\">\n  <div class=\"container\">\n    <div class=\"cta-card\">\n      <p class=\"pre-title\">{{t:hello}}</p>\n      <h2 class=\"cta-title\">{{t:lets_talk}}<br>{{t:with_us}}</h2>\n      <a href=\"mailto:info@sample.com\" class=\"cta-link\">{{t:email_placeholder}}</a>\n    </div>\n  </div>\n</section>",
+    "css": ".section-cta-card-centered {\n  background-color: #D6D6D6;\n  padding: 40px 20px 60px 20px;\n  font-family: 'Manrope', sans-serif;\n  color: #1a1a1a;\n}\n\n.section-cta-card-centered .container {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.section-cta-card-centered .cta-card {\n  background-color: #CDCDCD;\n  border-radius: 32px;\n  padding: 80px 20px;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.section-cta-card-centered .pre-title {\n  font-size: 1.2rem;\n  margin-bottom: 10px;\n  opacity: 0.7;\n}\n\n.section-cta-card-centered .cta-title {\n  font-size: 4rem;\n  line-height: 1.1;\n  font-weight: 400;\n  margin-bottom: 20px;\n}\n\n.section-cta-card-centered .cta-link {\n  color: #C27546;\n  font-size: 1.5rem;\n  text-decoration: none;\n  margin-top: 10px;\n  transition: opacity 0.3s;\n}\n\n.section-cta-card-centered .cta-link:hover {\n  opacity: 0.8;\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "hello": "Hello!",
+            "lets_talk": "Let's Talk",
+            "with_us": "With Us",
+            "email_placeholder": "info@sample.com"
+        },
+        "ar": {
+            "hello": "مرحباً!",
+            "lets_talk": "لنتحدث",
+            "with_us": "معنا",
+            "email_placeholder": "info@sample.com"
+        },
+        "de": {
+            "hello": "Hallo!",
+            "lets_talk": "Lass uns reden",
+            "with_us": "Mit Uns",
+            "email_placeholder": "info@sample.com"
+        }
+    }
+}

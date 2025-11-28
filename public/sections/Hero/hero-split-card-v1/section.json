@@ -1,0 +1,29 @@
+{
+    "id": "hero-split-card-v1",
+    "html": "<section class=\"section-hero-split-card-v1\" data-ai-id=\"element-placeholder\">\n  <div class=\"container\">\n    <div class=\"grid\">\n      <div class=\"card content-card\">\n        <div class=\"content-top\">\n          <h1 class=\"title\">{{t:hero_title}}</h1>\n          <p class=\"subtitle\">{{t:hero_subtitle}}</p>\n          <p class=\"description\">{{t:hero_desc}}</p>\n        </div>\n        <div class=\"content-bottom\">\n          <span class=\"meta\">{{t:portfolio_label}}</span>\n          <span class=\"date\">{{t:may_2024}}</span>\n        </div>\n      </div>\n      <div class=\"card image-card\">\n        <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=ai+robot+transparent+head&amp;image_type=photo\" alt=\"Neuro Vision AI\" loading=\"lazy\">\n      </div>\n    </div>\n  </div>\n\n\n<!-- Embedded Interactive Script -->\n<script>\n(function() {\n  const section = ((document.currentScript && document.currentScript.closest('.section-hero-split-card-v1')) || document.querySelector('.section-hero-split-card-v1'));\n  if (!section) return;\n  \n  const imgs = section.querySelectorAll('img[src^=\"https://pixabay.com/api/\"]');\n  imgs.forEach(img => {\n    fetch(img.src)\n      .then(r => r.json())\n      .then(data => {\n        if(data.hits && data.hits.length > 0) {\n          img.src = data.hits[0].webformatURL;\n        } else {\n          img.src = 'https://via.placeholder.com/600x600?text=AI+Image';\n        }\n      })\n      .catch(e => console.error('Pixabay Error:', e));\n  });\n})();\n</script>\n</section>",
+    "css": "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap');\n\n.section-hero-split-card-v1 {\n  background-color: #D6D6D6;\n  padding: 20px;\n  font-family: 'Manrope', sans-serif;\n  color: #1a1a1a;\n}\n\n.section-hero-split-card-v1 .container {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.section-hero-split-card-v1 .grid {\n  display: grid;\n  grid-template-columns: 1fr;\n  gap: 20px;\n}\n\n@media (min-width: 768px) {\n  .section-hero-split-card-v1 .grid {\n    grid-template-columns: 1fr 1fr;\n    height: 600px;\n  }\n}\n\n.section-hero-split-card-v1 .card {\n  border-radius: 32px;\n  overflow: hidden;\n  height: 100%;\n}\n\n.section-hero-split-card-v1 .content-card {\n  background-color: #CDCDCD;\n  padding: 40px;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  min-height: 400px;\n}\n\n.section-hero-split-card-v1 .image-card {\n  background-color: #000;\n  position: relative;\n}\n\n.section-hero-split-card-v1 .image-card img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  display: block;\n}\n\n.section-hero-split-card-v1 .title {\n  font-size: 3rem;\n  font-weight: 800;\n  line-height: 1.1;\n  margin-bottom: 24px;\n}\n\n.section-hero-split-card-v1 .subtitle {\n  font-size: 1.2rem;\n  font-weight: 600;\n  margin-bottom: 24px;\n  opacity: 0.8;\n}\n\n.section-hero-split-card-v1 .description {\n  font-size: 1rem;\n  line-height: 1.6;\n  opacity: 0.7;\n  max-width: 400px;\n}\n\n.section-hero-split-card-v1 .content-bottom {\n  margin-top: auto;\n  display: flex;\n  flex-direction: column;\n  font-size: 0.8rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  opacity: 0.6;\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "hero_title": "Neuro Vision",
+            "hero_subtitle": "AI-based Image Recognition and Analysis System",
+            "hero_desc": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "portfolio_label": "CREATIVE PORTFOLIO",
+            "may_2024": "MAY 2024"
+        },
+        "ar": {
+            "hero_title": "الرؤية العصبية",
+            "hero_subtitle": "نظام تحليل والتعرف على الصور القائم على الذكاء الاصطناعي",
+            "hero_desc": "في الحقيقة، الألم والمعاناة هما جزء من الحياة، ولكن بوجود الأدوات المناسبة يمكن التغلب عليهما.",
+            "portfolio_label": "محفظة إبداعية",
+            "may_2024": "مايو 2024"
+        },
+        "de": {
+            "hero_title": "Neuro-Vision",
+            "hero_subtitle": "KI-basiertes Bilderkennungs- und Analysesystem",
+            "hero_desc": "Aber wahrlich, Leid und Schmerz sind Teil des Lebens, doch mit den richtigen Werkzeugen können sie überwunden werden.",
+            "portfolio_label": "KREATIVES PORTFOLIO",
+            "may_2024": "MAI 2024"
+        }
+    }
+}

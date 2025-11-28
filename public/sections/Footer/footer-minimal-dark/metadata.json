@@ -1,0 +1,28 @@
+{
+    "name": "Minimal Dark Footer",
+    "category": "Footer",
+    "description": "A simple dark strip for copyright info.",
+    "tags": [
+        "footer",
+        "minimal"
+    ],
+    "structure": [
+        "section",
+        "text"
+    ],
+    "complexity": "simple",
+    "use_cases": [
+        "copyright",
+        "legal"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#2b2b2b",
+            "#888888"
+        ],
+        "fonts": [
+            "Manrope"
+        ],
+        "visual_identity": "Dark Footer"
+    }
+}

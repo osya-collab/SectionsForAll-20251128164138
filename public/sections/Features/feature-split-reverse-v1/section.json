@@ -1,0 +1,29 @@
+{
+    "id": "feature-split-reverse-v1",
+    "html": "<section class=\"section-feature-split-reverse-v1\" data-ai-id=\"element-placeholder\">\n  <div class=\"container\">\n    <div class=\"grid\">\n      <div class=\"card image-card\">\n        <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=ai+face+glowing+blue&amp;image_type=photo\" alt=\"Deep Speak\" loading=\"lazy\">\n      </div>\n      <div class=\"card content-card\">\n        <div class=\"content-top\">\n          <h2 class=\"title\">{{t:deep_title}}</h2>\n          <p class=\"subtitle\">{{t:deep_subtitle}}</p>\n          <p class=\"description\">{{t:deep_desc}}</p>\n        </div>\n        <div class=\"content-bottom\">\n          <span class=\"meta\">{{t:portfolio_label}}</span>\n          <span class=\"date\">{{t:june_2022}}</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n<!-- Embedded Interactive Script -->\n<script>\n(function() {\n  const section = ((document.currentScript && document.currentScript.closest('.section-feature-split-reverse-v1')) || document.querySelector('.section-feature-split-reverse-v1'));\n  if (!section) return;\n  \n  const imgs = section.querySelectorAll('img[src^=\"https://pixabay.com/api/\"]');\n  imgs.forEach(img => {\n    fetch(img.src)\n      .then(r => r.json())\n      .then(data => {\n        if(data.hits && data.hits.length > 0) {\n          img.src = data.hits[0].webformatURL;\n        } else {\n          img.src = 'https://via.placeholder.com/600x600?text=AI+Face';\n        }\n      })\n      .catch(e => console.error('Pixabay Error:', e));\n  });\n})();\n</script>\n</section>",
+    "css": ".section-feature-split-reverse-v1 {\n  background-color: #D6D6D6;\n  padding: 20px;\n  font-family: 'Manrope', sans-serif;\n  color: #1a1a1a;\n}\n\n.section-feature-split-reverse-v1 .container {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.section-feature-split-reverse-v1 .grid {\n  display: grid;\n  grid-template-columns: 1fr;\n  gap: 20px;\n}\n\n@media (min-width: 768px) {\n  .section-feature-split-reverse-v1 .grid {\n    grid-template-columns: 1fr 1fr;\n    height: 600px;\n  }\n}\n\n.section-feature-split-reverse-v1 .card {\n  border-radius: 32px;\n  overflow: hidden;\n  height: 100%;\n}\n\n.section-feature-split-reverse-v1 .content-card {\n  background-color: #CDCDCD;\n  padding: 40px;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n  min-height: 400px;\n}\n\n.section-feature-split-reverse-v1 .image-card {\n  background-color: #000;\n}\n\n.section-feature-split-reverse-v1 .image-card img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n  display: block;\n}\n\n.section-feature-split-reverse-v1 .title {\n  font-size: 3rem;\n  font-weight: 800;\n  line-height: 1.1;\n  margin-bottom: 24px;\n}\n\n.section-feature-split-reverse-v1 .subtitle {\n  font-size: 1.2rem;\n  font-weight: 600;\n  margin-bottom: 24px;\n  opacity: 0.8;\n}\n\n.section-feature-split-reverse-v1 .description {\n  font-size: 1rem;\n  line-height: 1.6;\n  opacity: 0.7;\n  max-width: 400px;\n}\n\n.section-feature-split-reverse-v1 .content-bottom {\n  margin-top: auto;\n  display: flex;\n  flex-direction: column;\n  text-align: right;\n  font-size: 0.8rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  opacity: 0.6;\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "deep_title": "Deep Speak",
+            "deep_subtitle": "Natural Language Processing and Voice Assistant System",
+            "deep_desc": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.",
+            "portfolio_label": "CREATIVE PORTFOLIO",
+            "june_2022": "JUNE 2022"
+        },
+        "ar": {
+            "deep_title": "الحديث العميق",
+            "deep_subtitle": "معالجة اللغة الطبيعية ونظام المساعد الصوتي",
+            "deep_desc": "هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة.",
+            "portfolio_label": "محفظة إبداعية",
+            "june_2022": "يونيو 2022"
+        },
+        "de": {
+            "deep_title": "Tiefes Sprechen",
+            "deep_subtitle": "Verarbeitung natürlicher Sprache und Sprachassistenzsystem",
+            "deep_desc": "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.",
+            "portfolio_label": "KREATIVES PORTFOLIO",
+            "june_2022": "JUNI 2022"
+        }
+    }
+}

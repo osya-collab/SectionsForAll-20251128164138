@@ -1,0 +1,29 @@
+{
+    "id": "feature-wide-v1",
+    "html": "<section class=\"section-feature-wide-v1\" data-ai-id=\"element-placeholder\">\n  <div class=\"container\">\n    <div class=\"image-container\">\n      <img src=\"https://pixabay.com/api/?key=52494880-f6ccd6f4c90db08ed73d4f14d&amp;q=cyborg+face+profile+dual&amp;image_type=photo\" alt=\"Sentient Mind\" loading=\"lazy\">\n    </div>\n    <div class=\"content-row\">\n      <div class=\"col-left\">\n        <h2 class=\"title\">{{t:sentient_title}}</h2>\n        <p class=\"subtitle\">{{t:sentient_subtitle}}</p>\n      </div>\n      <div class=\"col-right\">\n        <p class=\"desc\">{{t:lorem_short}}</p>\n        <div class=\"meta\">\n          <span>{{t:portfolio_label}}</span>\n          <span>{{t:sept_2024}}</span>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n<!-- Embedded Interactive Script -->\n<script>\n(function() {\n  const section = ((document.currentScript && document.currentScript.closest('.section-feature-wide-v1')) || document.querySelector('.section-feature-wide-v1'));\n  if (!section) return;\n  \n  const imgs = section.querySelectorAll('img[src^=\"https://pixabay.com/api/\"]');\n  imgs.forEach(img => {\n    fetch(img.src)\n      .then(r => r.json())\n      .then(data => {\n        if(data.hits && data.hits.length > 0) {\n          img.src = data.hits[0].webformatURL;\n        } else {\n          img.src = 'https://via.placeholder.com/1200x400?text=Wide+Feature';\n        }\n      })\n      .catch(e => console.error('Pixabay Error:', e));\n  });\n})();\n</script>\n</section>",
+    "css": ".section-feature-wide-v1 {\n  background-color: #D6D6D6;\n  padding: 40px 20px;\n  font-family: 'Manrope', sans-serif;\n  color: #1a1a1a;\n}\n\n.section-feature-wide-v1 .container {\n  max-width: 1200px;\n  margin: 0 auto;\n}\n\n.section-feature-wide-v1 .image-container {\n  width: 100%;\n  height: 400px;\n  border-radius: 32px;\n  overflow: hidden;\n  margin-bottom: 30px;\n}\n\n.section-feature-wide-v1 .image-container img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n\n.section-feature-wide-v1 .content-row {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n\n@media (min-width: 768px) {\n  .section-feature-wide-v1 .content-row {\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: flex-start;\n  }\n}\n\n.section-feature-wide-v1 .col-left {\n  flex: 1;\n  max-width: 500px;\n}\n\n.section-feature-wide-v1 .col-right {\n  flex: 1;\n  max-width: 400px;\n  text-align: right;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-end;\n}\n\n.section-feature-wide-v1 .title {\n  font-size: 2.5rem;\n  font-weight: 800;\n  margin-bottom: 10px;\n}\n\n.section-feature-wide-v1 .subtitle {\n  font-size: 1.1rem;\n  opacity: 0.8;\n}\n\n.section-feature-wide-v1 .desc {\n  font-size: 0.9rem;\n  line-height: 1.6;\n  opacity: 0.7;\n  margin-bottom: 20px;\n  text-align: left;\n}\n\n@media (min-width: 768px) {\n   .section-feature-wide-v1 .desc {\n      text-align: right;\n   }\n}\n\n.section-feature-wide-v1 .meta {\n  font-size: 0.75rem;\n  text-transform: uppercase;\n  letter-spacing: 1px;\n  opacity: 0.6;\n  display: flex;\n  flex-direction: column;\n}",
+    "js": "",
+    "translations": {
+        "en": {
+            "sentient_title": "Sentient Mind",
+            "sentient_subtitle": "Autonomous Decision-Making AI for Smart Devices",
+            "lorem_short": "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "portfolio_label": "CREATIVE PORTFOLIO",
+            "sept_2024": "SEPTEMBER 2024"
+        },
+        "ar": {
+            "sentient_title": "العقل الواعي",
+            "sentient_subtitle": "اتخاذ القرار المستقل للأجهزة الذكية",
+            "lorem_short": "النص الوهمي هو نص مؤقت يستخدم في تصميم الويب.",
+            "portfolio_label": "محفظة إبداعية",
+            "sept_2024": "سبتمبر 2024"
+        },
+        "de": {
+            "sentient_title": "Empfindungsfähiger Geist",
+            "sentient_subtitle": "Autonome Entscheidungsfindung für intelligente Geräte",
+            "lorem_short": "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+            "portfolio_label": "KREATIVES PORTFOLIO",
+            "sept_2024": "SEPTEMBER 2024"
+        }
+    }
+}

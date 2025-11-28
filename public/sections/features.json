@@ -1,0 +1,17 @@
+[
+    {
+        "id": "feature-wide-v1",
+        "name": "Wide Feature Image with Text",
+        "category": "Features"
+    },
+    {
+        "id": "feature-split-reverse-v1",
+        "name": "Feature Split Reversed",
+        "category": "Features"
+    },
+    {
+        "id": "feature-wide-v2",
+        "name": "Wide Feature Image with Text V2",
+        "category": "Features"
+    }
+]

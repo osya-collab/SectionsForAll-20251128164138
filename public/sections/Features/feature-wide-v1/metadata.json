@@ -1,0 +1,30 @@
+{
+    "name": "Wide Feature Image with Text",
+    "category": "Features",
+    "description": "A full-width image followed by a two-column text layout, suitable for case study headers.",
+    "tags": [
+        "feature",
+        "wide",
+        "image"
+    ],
+    "structure": [
+        "section",
+        "image",
+        "text-row"
+    ],
+    "complexity": "simple",
+    "use_cases": [
+        "project details",
+        "article header"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#D6D6D6",
+            "#1a1a1a"
+        ],
+        "fonts": [
+            "Manrope"
+        ],
+        "visual_identity": "Clean Layout"
+    }
+}

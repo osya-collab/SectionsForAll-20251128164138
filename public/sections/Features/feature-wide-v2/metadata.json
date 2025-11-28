@@ -1,0 +1,28 @@
+{
+    "name": "Wide Feature Image with Text V2",
+    "category": "Features",
+    "description": "Identical structure to the first wide feature, used for consistency.",
+    "tags": [
+        "feature",
+        "wide"
+    ],
+    "structure": [
+        "section",
+        "image",
+        "text-row"
+    ],
+    "complexity": "simple",
+    "use_cases": [
+        "portfolio item"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#D6D6D6",
+            "#1a1a1a"
+        ],
+        "fonts": [
+            "Manrope"
+        ],
+        "visual_identity": "Clean Layout"
+    }
+}

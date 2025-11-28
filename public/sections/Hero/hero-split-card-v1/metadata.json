@@ -1,0 +1,33 @@
+{
+    "name": "Hero Split Cards",
+    "category": "Hero",
+    "description": "A split layout with a text card on the left and a full-height image card on the right, featuring large border radius.",
+    "tags": [
+        "hero",
+        "split",
+        "cards",
+        "ai"
+    ],
+    "structure": [
+        "section",
+        "grid",
+        "card-text",
+        "card-image"
+    ],
+    "complexity": "intermediate",
+    "use_cases": [
+        "portfolio hero",
+        "project showcase"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#D6D6D6",
+            "#CDCDCD",
+            "#1a1a1a"
+        ],
+        "fonts": [
+            "Manrope"
+        ],
+        "visual_identity": "Bento Grid"
+    }
+}

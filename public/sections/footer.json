@@ -58,5 +58,10 @@
         "id": "footer-with-disclaimer-de",
         "name": "Footer with Disclaimer DE",
         "category": "Footer"
+    },
+    {
+        "id": "footer-minimal-dark",
+        "name": "Minimal Dark Footer",
+        "category": "Footer"
     }
 ]

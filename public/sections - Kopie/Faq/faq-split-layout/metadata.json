@@ -1,0 +1,17 @@
+{
+    "name": "Split Layout FAQ",
+    "category": "FAQ",
+    "description": "An FAQ section with a split layout, featuring a large heading on the left and a clean, lined accordion on the right.",
+    "tags": [
+        "faq",
+        "split-layout",
+        "accordion",
+        "corporate",
+        "clean"
+    ],
+    "style_analysis": {
+        "colors": [],
+        "fonts": [],
+        "visual_identity": "unknown"
+    }
+}

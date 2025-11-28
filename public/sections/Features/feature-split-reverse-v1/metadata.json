@@ -1,0 +1,32 @@
+{
+    "name": "Feature Split Reversed",
+    "category": "Features",
+    "description": "Similar to the hero section but with the image on the left and text on the right.",
+    "tags": [
+        "feature",
+        "split",
+        "reversed"
+    ],
+    "structure": [
+        "section",
+        "grid",
+        "image-card",
+        "text-card"
+    ],
+    "complexity": "intermediate",
+    "use_cases": [
+        "feature highlight",
+        "product detail"
+    ],
+    "style_analysis": {
+        "colors": [
+            "#D6D6D6",
+            "#CDCDCD",
+            "#1a1a1a"
+        ],
+        "fonts": [
+            "Manrope"
+        ],
+        "visual_identity": "Bento Grid"
+    }
+}

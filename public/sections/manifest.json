@@ -16,6 +16,9 @@
         "testimonials.json",
         "texts.json",
         "timeline.json",
-        "trust.json"
+        "trust.json",
+        "hero.json",
+        "features.json",
+        "call-to-action.json"
     ]
 }
